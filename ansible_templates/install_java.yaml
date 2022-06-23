@@ -1,0 +1,15 @@
+---
+- hosts: all
+  become: yes
+  remote_user: ec2-user
+  become_user: root
+  tasks:
+    - name: install dependencies
+      yum:
+        name: "{{ package }} "
+        state: present
+      vars:
+        package:
+        - wget
+        - java-11-openjdk-devel
+        - git
