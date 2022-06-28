@@ -64,7 +64,7 @@
       
     - name: clone repo
       git:
-        repo: https://github.com/linuxacademy/content-terraform-jenkins.git
+        repo: https://github.com/ifathi/CICD-TF-Jenkins-Docker.git
         dest: /tmp/jenkins
 
     - name: Setup Jenkins Repo
